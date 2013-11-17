@@ -18,7 +18,8 @@
 </p>
 
 <p>
-    You are given a start set of balls as a string that contains "b" (black) and "w" (white) and the number of the step (N).
+    You are given a start set of balls as a string that contains "b" (black) and "w" (white) and the number of the step
+    (N).
     The order of the balls does not matter.
 </p>
 
@@ -41,12 +42,15 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
+checkio('bbw', 3) == 0.48
+checkio('wwb', 3) == 0.52
+checkio('www', 3) == 0.56
+checkio('bbbb', 1) == 0
+checkio('wwbb', 4) == 0.5
+checkio('bwbwbwb', 5) == 0.48
+</pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
 </p>
