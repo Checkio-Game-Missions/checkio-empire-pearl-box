@@ -1,11 +1,11 @@
-def checkio(a, b):
-    """
-        sums two passed arguments
-    """
-    return None
+def checkio(balls, step):
+    return 0.50
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    assert checkio(3, 2) == 5
-    assert checkio(5, 7) == 12
-    print('Done')
+    assert checkio('bbw', 3) == 0.48
+    assert checkio('wwb', 3) == 0.52
+    assert checkio('www', 3) == 0.56
+    assert checkio('bbbb', 1) == 0
+    assert checkio('wwbb', 4) == 0.5
+    assert checkio('bwbwbwb', 5) == 0.48

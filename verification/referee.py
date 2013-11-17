@@ -10,4 +10,9 @@ api.add_listener(
     ON_CONNECT,
     CheckiOReferee(
         tests=TESTS,
-        checker=checkers.float_comparison(2)).on_ready)
+        cover_code={
+            'python-27': cover_codes.unwrap_args,
+            'python-3': cover_codes.unwrap_args
+        },
+        checker=checkers.float_comparison(2)
+    ).on_ready)
