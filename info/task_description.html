@@ -1,29 +1,42 @@
 <p>
-    <i>( Describe task in general )</i>
+    While Stephan is <a href="http://www.checkio.org/mission/express-delivery/share/de89191e897234cfb3468291385963d9/">running
+    with cargo</a>,
+    Nicola and Sophia invnted the game with boxes.
+
 </p>
 
 <p>
-    Sum two passed ints
+    At the beginning of the game several black and white balls are placed in the box.
+    Then the robots for each move take the ball out of the box and put the ball back of the opposite color.
+    The winner is the one who pulls the white ball on the <strong>Nth</strong> step.
+</p>
+
+<p>
+    The robots don't like indeterminacy and want to know the probability of a white ball on Nth step.
+    The probability is a value between 0 (0% chance or will not happen) and 1 (100% chance or will happen).
+    The result is a float from 0 to 1 with two digits precision.
+</p>
+
+<p>
+    You are given a start set of balls as a string that contains "b" (black) and "w" (white) and the number of the step (N).
+    The order of the balls does not matter.
 </p>
 
 <p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <img class="for_info_only" title="balls" src="{{MEDIA}}balls.png" alt="balls" width="600px"/>
+    <img class="for_editor_only" title="balls" src="{{MEDIA}}balls.png" alt="balls" width="380px"/>
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Input: </strong> The start sequence of the balls (string) and the step's number (int).
 </p>
 
+<p>
+    <strong>Output: </strong> The probability for white ball, a float.
+</p>
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
