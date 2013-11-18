@@ -1,4 +1,4 @@
-def checkio(balls, step):
+def checkio(marbles, step):
     return 0.50
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
