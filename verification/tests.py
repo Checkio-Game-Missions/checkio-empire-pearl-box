@@ -98,6 +98,15 @@ TESTS = {
         {"input": ('bbbbbbbbbbbb', 5),
          "answer": 0.259,
          "explanation": 0.26},
+
+        {"input": ('wwwwwwwwwwwwwwwwwwww', 20),
+         "answer": 0.567,
+         "explanation": 0.56},
+        {"input": ('bbbbbbbbbbbbbbbbbbbb', 20),
+         "answer": 0.432,
+         "explanation": 0.43},
+
+
     ],
     "4. Extra": [
         {"input": ('wwwwwbwbwbbwbbwwbw', 11),

@@ -13,11 +13,11 @@
 <p>
     Our robots don't like indeterminacy and want to know the probability of a white pearl on the Nth step.
     The probability is a value between 0 (0% chance or will not happen) and 1 (100% chance or will happen).
-    The result is a float from 0 to 1 with two digits precision.
+    The result is a float from 0 to 1 with two digits precision (&plusmn;0.01).
 </p>
 
 <p>
-    You are given a start set of pearles as a string that contains "b" (black) and "w" (white) and the number of the step
+    You are given a start set of pearls as a string that contains "b" (black) and "w" (white) and the number of the step
     (N).
     The order of the pearls does not matter.
 </p>
@@ -28,11 +28,11 @@
 </p>
 
 <p>
-    <strong>Input: </strong> The start sequence of the pearls (string) and the step's number (int).
+    <strong>Input: </strong> The start sequence of the pearls as a string and the step number as an integer.
 </p>
 
 <p>
-    <strong>Output: </strong> The probability for white pearl, a float.
+    <strong>Output: </strong> The probability for a white pearl as a float.
 </p>
 
 
@@ -55,6 +55,13 @@ checkio('bwbwbwb', 5) == 0.48
     This task will introduce you the basics of probability theory and statistics.
     Curious fact: regardless of the initial state,
     with an increase in the number of steps, the probability approaches 0.5!
+</p>
+
+
+<p>
+    <strong>Precondition:</strong>
+    0 < N &le; 20<br>
+    0 < |pearls| &le; 20<br>
 </p>
 
 <p class="for_info_only">
