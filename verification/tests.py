@@ -101,7 +101,7 @@ TESTS = {
 
         {"input": ('wwwwwwwwwwwwwwwwwwww', 20),
          "answer": 0.567,
-         "explanation": 0.56},
+         "explanation": 0.57},
         {"input": ('bbbbbbbbbbbbbbbbbbbb', 20),
          "answer": 0.432,
          "explanation": 0.43},
