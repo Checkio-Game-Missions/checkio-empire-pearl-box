@@ -4,9 +4,13 @@ def probability(marbles, step):
 
 if __name__ == '__main__':
     # These "asserts" using only for self-checking and not necessary for auto-testing
-    assert probability('bbw', 3) == 0.48, "1st example"
-    assert probability('wwb', 3) == 0.52, "2nd example"
-    assert probability('www', 3) == 0.56, "3rd example"
-    assert probability('bbbb', 1) == 0, "4th example"
-    assert probability('wwbb', 4) == 0.5, "5th example"
-    assert probability('bwbwbwb', 5) == 0.48, "6th example"
+    def almost_equal(checked, correct, significant_digits=2):
+        precision = 0.1 ** significant_digits
+        return correct - precision < checked < correct + precision
+
+    assert almost_equal(probability('bbw', 3), 0.48), "1st example"
+    assert almost_equal(probability('wwb', 3), 0.52), "2nd example"
+    assert almost_equal(probability('www', 3), 0.56), "3rd example"
+    assert almost_equal(probability('bbbb', 1), 0), "4th example"
+    assert almost_equal(probability('wwbb', 4), 0.5), "5th example"
+    assert almost_equal(probability('bwbwbwb', 5), 0.48), "6th example"
