@@ -10,5 +10,3 @@ The result is a float from 0 to 1 with two digits precision (&plusmn;0.01).
 You are given a start set of pearls as a string that contains 
 "b" (black) and "w" (white) and the number of the step (N).
 The order of the pearls does not matter.
-
-[Probability](probability.png)
