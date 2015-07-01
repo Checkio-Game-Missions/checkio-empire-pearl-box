@@ -1,0 +1,22 @@
+"use strict";
+
+function probability(marbles, step) {
+    return 0.50;
+}
+
+var assert = require("assert");
+
+if (!global.is_cheking) {
+    // These "asserts" using only for self-checking and not necessary for auto-testing
+    var almostEqual = function (actual, expected, significantDigits) {
+        significantDigits = significantDigits || 2;
+        var precision = Math.pow(0.1, significantDigits);
+        return Math.abs(expected - actual) < precision;
+    };
+    assert(almostEqual(probability('bbw', 3), 0.48), "1st example");
+    assert(almostEqual(probability('wwb', 3), 0.52), "2nd example");
+    assert(almostEqual(probability('www', 3), 0.56), "3rd example");
+    assert(almostEqual(probability('bbbb', 1), 0), "4th example");
+    assert(almostEqual(probability('wwbb', 4), 0.5), "5th example");
+    assert(almostEqual(probability('bwbwbwb', 5), 0.48), "6th example");
+}
