@@ -6,12 +6,13 @@ function probability(marbles, step) {
 
 var assert = require("assert");
 
-if (!global.is_cheking) {
+if (!global.is_checking) {
     // These "asserts" using only for self-checking and not necessary for auto-testing
     var almostEqual = function (actual, expected, significantDigits) {
         significantDigits = significantDigits || 2;
         var precision = Math.pow(0.1, significantDigits);
         return Math.abs(expected - actual) < precision;
+
     };
     assert(almostEqual(probability('bbw', 3), 0.48), "1st example");
     assert(almostEqual(probability('wwb', 3), 0.52), "2nd example");
@@ -19,4 +20,5 @@ if (!global.is_cheking) {
     assert(almostEqual(probability('bbbb', 1), 0), "4th example");
     assert(almostEqual(probability('wwbb', 4), 0.5), "5th example");
     assert(almostEqual(probability('bwbwbwb', 5), 0.48), "6th example");
+    console.log("Code's finished? Earn rewards by clicking 'Check' to review your tests!");
 }
